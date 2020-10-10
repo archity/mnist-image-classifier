@@ -1,0 +1,37 @@
+Train on 54000 samples, validate on 6000 samples
+Epoch 1/5
+54000/54000 [==============================] - 21s 395us/sample - loss: 0.2436 - accuracy: 0.9263 - categorical_accuracy: 0.1005 - f1_score: 0.9679 - recall_score: 0.9512 - precision_score: 0.9917 - top_k_categorical_accuracy: 0.3420 - multiclass_true_positives: 50020.0000 - val_loss: 0.0934 - val_accuracy: 0.9730 - val_categorical_accuracy: 0.0973 - val_f1_score: 0.9958 - val_recall_score: 0.9919 - val_precision_score: 1.0000 - val_top_k_categorical_accuracy: 0.3378 - val_multiclass_true_positives: 5838.0000
+Epoch 2/5
+54000/54000 [==============================] - 19s 350us/sample - loss: 0.0909 - accuracy: 0.9716 - categorical_accuracy: 0.0994 - f1_score: 0.9959 - recall_score: 0.9919 - precision_score: 1.0000 - top_k_categorical_accuracy: 0.3529 - multiclass_true_positives: 52467.0000 - val_loss: 0.0704 - val_accuracy: 0.9775 - val_categorical_accuracy: 0.0963 - val_f1_score: 0.9975 - val_recall_score: 0.9952 - val_precision_score: 1.0000 - val_top_k_categorical_accuracy: 0.3353 - val_multiclass_true_positives: 5865.0000
+Epoch 3/5
+54000/54000 [==============================] - 18s 334us/sample - loss: 0.0629 - accuracy: 0.9799 - categorical_accuracy: 0.0991 - f1_score: 0.9978 - recall_score: 0.9956 - precision_score: 1.0000 - top_k_categorical_accuracy: 0.3561 - multiclass_true_positives: 52914.0000 - val_loss: 0.0688 - val_accuracy: 0.9808 - val_categorical_accuracy: 0.0960 - val_f1_score: 0.9982 - val_recall_score: 0.9965 - val_precision_score: 1.0000 - val_top_k_categorical_accuracy: 0.3055 - val_multiclass_true_positives: 5885.0000
+Epoch 4/5
+54000/54000 [==============================] - 18s 331us/sample - loss: 0.0472 - accuracy: 0.9849 - categorical_accuracy: 0.0991 - f1_score: 0.9984 - recall_score: 0.9968 - precision_score: 1.0000 - top_k_categorical_accuracy: 0.3630 - multiclass_true_positives: 53186.0000 - val_loss: 0.0599 - val_accuracy: 0.9835 - val_categorical_accuracy: 0.0968 - val_f1_score: 0.9977 - val_recall_score: 0.9955 - val_precision_score: 1.0000 - val_top_k_categorical_accuracy: 0.3458 - val_multiclass_true_positives: 5901.0000
+Epoch 5/5
+54000/54000 [==============================] - 18s 325us/sample - loss: 0.0379 - accuracy: 0.9881 - categorical_accuracy: 0.0989 - f1_score: 0.9989 - recall_score: 0.9977 - precision_score: 1.0000 - top_k_categorical_accuracy: 0.3638 - multiclass_true_positives: 53359.0000 - val_loss: 0.0587 - val_accuracy: 0.9825 - val_categorical_accuracy: 0.0977 - val_f1_score: 0.9984 - val_recall_score: 0.9968 - val_precision_score: 1.0000 - val_top_k_categorical_accuracy: 0.4398 - val_multiclass_true_positives: 5895.0000
+
+Model: "sequential_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_4 (Conv2D)            (None, 24, 24, 6)         156       
+_________________________________________________________________
+average_pooling2d_4 (Average (None, 12, 12, 6)         0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 8, 8, 16)          2416      
+_________________________________________________________________
+average_pooling2d_5 (Average (None, 4, 4, 16)          0         
+_________________________________________________________________
+flatten_4 (Flatten)          (None, 256)               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 120)               30840     
+_________________________________________________________________
+flatten_5 (Flatten)          (None, 120)               0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 84)                10164     
+_________________________________________________________________
+dense_8 (Dense)              (None, 10)                850       
+=================================================================
+Total params: 44,426
+Trainable params: 44,426
+Non-trainable params: 0
